@@ -1,0 +1,15 @@
+@use '../util' as u;
+
+h1 {
+    font-size: clamp(u.rem(35), u.rem(30) + 5vw, u.rem(48));
+}
+
+h2 {
+    font-size: clamp(u.rem(18), u.rem(16) + 2vw, u.rem(20));
+}
+
+p {
+    font-size: u.rem(16);
+}
+
+strong{font-weight: 700;}
