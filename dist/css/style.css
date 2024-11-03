@@ -33,4 +33,23 @@ html {
 
 body {
   font-family: var(--font);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "main" "footer";
+}
+.grid__main {
+  grid-area: main;
+}
+.grid__main-nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  font-size: 1.5rem;
+}
+.grid__main-nav--logo {
+  background-color: yellow;
 }/*# sourceMappingURL=style.css.map */

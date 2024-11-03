@@ -1,0 +1,23 @@
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "main"
+        "footer";
+    
+    &__main {
+        grid-area: main;
+        &-nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            font-size: 1.5rem;
+
+            &--logo {
+                background-color: yellow;
+            }
+        }
+    }
+}
