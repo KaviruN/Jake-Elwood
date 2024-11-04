@@ -11,7 +11,8 @@ h2 {
 }
 
 p {
-  font-size: 1rem;
+  font-size: clamp(1rem, 0.875rem + 1vw, 1.125rem);
+  color: white;
 }
 
 strong {
@@ -33,4 +34,119 @@ html {
 
 body {
   font-family: var(--font);
+}
+
+:root {
+  --yellow: hsl(54, 100%, 50%);
+  --gray: hsl(0, 0%, 25%);
+  --light-yellow: hsl(54, 100%, 70%);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "main" "aside" "footer";
+}
+.grid__main {
+  display: flex;
+  flex-direction: column;
+  grid-area: main;
+  background-image: url("../../APP/img/hero-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.grid__main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.grid__main-nav--logo {
+  background-color: var(--yellow);
+  padding-top: 1.25em;
+  margin-left: 1em;
+}
+.grid__main-nav--menu {
+  margin-right: 1em;
+}
+.grid__main-content {
+  padding: 2em 3em;
+  justify-self: center;
+  width: 80%;
+}
+.grid__main-content--yellow {
+  color: var(--yellow);
+}
+.grid__main-content--btn {
+  background-color: var(--yellow);
+  color: hsl(0, 0%, 0%);
+  padding: 0.75em 1.75em;
+  border: none;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 900;
+  margin-top: 1em;
+}
+.grid__main-content--btn:hover, .grid__main-content--btn:focus {
+  background-color: var(--light-yellow);
+}
+.grid__main-content p {
+  color: white;
+  margin-bottom: 1em;
+}
+.grid__aside {
+  grid-area: aside;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 3em;
+}
+.grid__aside-wiget h2 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1em;
+}
+.grid__aside-wiget h2::after {
+  content: "";
+  position: absolute;
+  left: 20%;
+  bottom: -0.2em;
+  width: 50%;
+  height: 0.125em;
+  background-color: var(--yellow);
+}
+.grid__aside-wiget p {
+  color: var(--gray);
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+.grid__footer {
+  grid-area: footer;
+  background-color: hsl(0, 0%, 92%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+  text-align: center;
+}
+.grid__footer-social i {
+  font-size: 1.5em;
+  margin: 0 0.5em;
+}
+.grid__footer-content {
+  opacity: 0.37;
+}
+.grid__footer-content img {
+  margin: 1em;
+}
+.grid__footer-content p {
+  font-weight: 500;
+}
+.grid__footer-legal {
+  opacity: 0.37;
+  margin-top: 2em;
+  font-weight: 500;
 }/*# sourceMappingURL=style.css.map */

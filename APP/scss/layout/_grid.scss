@@ -1,0 +1,138 @@
+@use "../util" as u;
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "main"
+    "aside"
+    "footer";
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    grid-area: main;
+    background-image: url("../../APP/img/hero-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &-nav {
+      display: flex;
+      justify-content: space-between;
+      // font-size: 1.5rem;
+      align-items: center;
+
+      &--logo {
+        background-color: var(--yellow);
+        padding-top: u.em(20);
+        margin-left: 1em;
+      }
+
+      &--menu {
+        margin-right: 1em;
+      }
+    }
+    &-content {
+      padding: 2em 3em;
+      justify-self: center;
+      width: 80%;
+
+      &--yellow {
+        color: var(--yellow);
+      }
+
+      &--btn {
+        background-color: var(--yellow);
+        color: hsl(0, 0%, 0%);
+        padding: 0.75em 1.75em;
+        border: none;
+        cursor: pointer;
+        font-size: u.rem(14);
+        font-weight: 900;
+        margin-top: 1em;
+      }
+
+      &--btn:hover,
+      &--btn:focus {
+        background-color: var(--light-yellow);
+      }
+
+      p {
+        color: white;
+        margin-bottom: 1em;
+      }
+    }
+  }
+
+  &__aside {
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 3em;
+
+    &-wiget {
+      h2 {
+        position: relative; // Required for positioning the pseudo-element
+        display: inline-block; // Ensure the h2 element is inline-block
+        margin-bottom: 1em;
+
+        &::after {
+          content: '';
+          position: absolute;
+          left: 20%; // Center the underline (50% width means 25% from each side)
+          bottom: -0.2em; // Adjust the position below the text
+          width: 50%; // Set the width of the underline to 50% of the text width
+          height: u.em(2); // Set the thickness of the underline
+          background-color: var(--yellow); // Set the color of the underline
+        }
+      }
+
+      p {
+        color: var(--gray);
+        font-weight: 500;
+        margin-bottom: 1em;
+      }
+    }
+  }
+
+  &__footer{
+    grid-area: footer;
+    background-color: hsl(0, 0%, 92%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    text-align: center;
+
+    &-social {
+      i {
+        font-size: 1.5em;
+        margin: 0 0.5em;
+      }
+    }
+
+    &-content {
+      opacity: 0.37;
+
+      img {
+        margin: 1em;
+      }
+
+      p{
+        font-weight: 500;
+      }
+    
+    }
+
+    &-legal {
+      opacity: 0.37;
+      margin-top: 2em;
+      font-weight: 500;
+    }
+  }
+}
