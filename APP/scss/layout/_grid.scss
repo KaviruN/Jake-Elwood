@@ -1,4 +1,4 @@
-@use '../util' as u;
+@use "../util" as u;
 
 .grid {
   display: grid;
@@ -7,7 +7,6 @@
   grid-template-areas:
     "main"
     "footer";
-    
 
   &__main {
     display: flex;
@@ -16,6 +15,10 @@
     background-image: url("../../APP/img/hero-bg.jpg");
     background-position: center;
     min-height: 61vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    
     &-nav {
       display: flex;
       justify-content: space-between;
@@ -28,25 +31,26 @@
         padding-top: u.em(25);
         margin-left: 1em;
       }
+
+      &--menu {
+        margin-right: 2em;
+      }
     }
     &-content {
-        padding: 2em 3em;
-        justify-self: center;
-        min-height: 61vh;
-        width: 60%;
+      padding: 2em 3em;
+      justify-self: center;
+      min-height: 61vh;
+      width: 60%;
 
-        &--yellow{
-            color: var(--yellow);
-        }
-
-        p {
-            font-size: u.rem(24);
-            color: white;
-            margin-bottom: 1em;
-        }
-        
-        
+      &--yellow {
+        color: var(--yellow);
       }
-  }
 
+      p {
+        font-size: u.rem(24);
+        color: white;
+        margin-bottom: 1em;
+      }
+    }
+  }
 }
