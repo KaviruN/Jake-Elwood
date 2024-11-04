@@ -7,7 +7,7 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(1.125rem, 1rem + 2vw, 1.25rem);
+  font-size: clamp(1.125rem, 1rem + 2vw, 1.5rem);
 }
 
 p {
@@ -65,7 +65,7 @@ body {
 .grid__main-nav--logo {
   background-color: var(--yellow);
   padding-top: 1.25em;
-  margin-left: 1em;
+  margin-left: 2em;
 }
 .grid__main-nav--menu {
   margin-right: 1em;
@@ -91,9 +91,19 @@ body {
 .grid__main-content--btn:hover, .grid__main-content--btn:focus {
   background-color: var(--light-yellow);
 }
-.grid__main-content p {
+.grid__main-content h2 {
   color: white;
   margin-bottom: 1em;
+}
+@media (min-width: 42.1875em) {
+  .grid__main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 60%;
+    min-height: 61vh;
+  }
 }
 .grid__aside {
   grid-area: aside;
@@ -103,6 +113,18 @@ body {
   align-items: center;
   text-align: center;
   padding: 3em;
+}
+@media (min-width: 42.1875em) {
+  .grid__aside {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 2em;
+  }
+}
+@media (min-width: 42.1875em) {
+  .grid__aside-wiget {
+    padding: 2em;
+  }
 }
 .grid__aside-wiget h2 {
   position: relative;
@@ -132,21 +154,54 @@ body {
   padding: 2em;
   text-align: center;
 }
+@media (min-width: 42.1875em) {
+  .grid__footer {
+    text-align: left;
+  }
+}
+.grid__footer-social {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1em;
+}
 .grid__footer-social i {
   font-size: 1.5em;
   margin: 0 0.5em;
 }
-.grid__footer-content {
+.grid__footer-social--logo {
+  margin-bottom: 1.5em;
+}
+.grid__footer-social--logo img {
   opacity: 0.37;
 }
-.grid__footer-content img {
-  margin: 1em;
+@media (min-width: 42.1875em) {
+  .grid__footer-social--logo {
+    order: -1;
+    margin: 0;
+  }
 }
-.grid__footer-content p {
+@media (min-width: 42.1875em) {
+  .grid__footer-social {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.grid__footer-content {
+  width: 100%;
+  opacity: 0.37;
+}
+@media (min-width: 42.1875em) {
+  .grid__footer-content {
+    margin: 0;
+    margin-bottom: 0.5em;
+  }
+}
+.grid__footer-content--legal {
+  margin-top: 3em;
   font-weight: 500;
 }
-.grid__footer-legal {
-  opacity: 0.37;
-  margin-top: 2em;
+.grid__footer p {
   font-weight: 500;
 }/*# sourceMappingURL=style.css.map */
