@@ -14,7 +14,6 @@
     grid-area: main;
     background-image: url("../../APP/img/hero-bg.jpg");
     background-position: center;
-    min-height: 61vh;
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -22,25 +21,23 @@
     &-nav {
       display: flex;
       justify-content: space-between;
-      //   background-color: black;
       font-size: 1.5rem;
       align-items: center;
 
       &--logo {
         background-color: var(--yellow);
-        padding-top: u.em(25);
+        padding-top: u.em(20);
         margin-left: 1em;
       }
 
       &--menu {
-        margin-right: 2em;
+        margin-right: 1em;
       }
     }
     &-content {
       padding: 2em 3em;
       justify-self: center;
-      min-height: 61vh;
-      // width: 60%;
+      width: 80%;
 
       &--yellow {
         color: var(--yellow);
@@ -49,7 +46,7 @@
       &--btn {
         background-color: var(--yellow);
         color: hsl(0, 0%, 0%);
-        padding: 1em 2em;
+        padding: .75em 1.75em;
         border: none;
         cursor: pointer;
         font-size: u.rem(14);
@@ -57,8 +54,12 @@
         margin-top: 1em;
       }
 
+      &--btn:hover,
+      &--btn:focus {
+        background-color: var(--light-yellow);
+      }
+
       p {
-        // font-size: u.rem(18);
         color: white;
         margin-bottom: 1em;
       }
