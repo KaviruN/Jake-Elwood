@@ -70,8 +70,8 @@
         align-items: flex-start; // Center items horizontally
         width: 60%;
         min-height: 61vh;
-    }
-    
+      }
+
       // button {
       //   align-self: flex-start;
       // }
@@ -87,13 +87,17 @@
     text-align: center;
     padding: 3em;
 
-    @media (min-width: u.em(675)){
+    @media (min-width: u.em(675)) {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 30% 30% 30%;
       gap: 2em;
     }
 
     &-wiget {
+      @media (min-width: u.em(675)) {
+        padding: 2em;
+      }
+
       h2 {
         position: relative; // Required for positioning the pseudo-element
         display: inline-block; // Ensure the h2 element is inline-block
@@ -116,7 +120,6 @@
         margin-bottom: 1em;
       }
     }
-
   }
 
   &__footer {
@@ -128,31 +131,61 @@
     padding: 2em;
     text-align: center;
 
+    @media (min-width: u.em(675)) {
+      // justify-content: space-between;
+      text-align: left;
+    }
 
-    
     &-social {
+      width: 100%;
+      display: flex; // Use Flexbox to align items on the same line
+      justify-content: center;
+      flex-direction: column; // Center the social icons horizontally
+      gap: 1em;
       i {
         font-size: 1.5em;
         margin: 0 0.5em;
       }
+      &--logo {
+        margin-bottom: 1.5em;
+
+        img {
+          opacity: 0.37;
+        }
+        @media (min-width: u.em(675)) {
+          order: -1;
+          margin: 0;
+        }
+      }
+
+      @media (min-width: u.em(675)) {
+        flex-direction: row;
+        justify-content: space-between;
+      }
     }
 
     &-content {
+      width: 100%;
       opacity: 0.37;
 
-      img {
-        margin: 1em;
-      }
+      // img {
+      //   margin: 1em;
 
-      p {
+      @media (min-width: u.em(675)) {
+        margin: 0;
+        margin-bottom: 0.5em;
+      }
+      &--legal {
+        margin-top: 3em;
         font-weight: 500;
       }
     }
 
-    &-legal {
-      opacity: 0.37;
-      margin-top: 2em;
+    p {
       font-weight: 500;
+      // margin: 1em 0;
     }
   }
+
+
 }
