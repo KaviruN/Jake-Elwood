@@ -15,3 +15,8 @@
     @error 'Don\'t use units when using the em() function; only numbers.';
   }
 }
+
+
+@function precentage($size) {
+  @return math.div($size, 960) * 100 + '%';
+}

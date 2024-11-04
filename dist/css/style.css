@@ -12,6 +12,7 @@ h2 {
 
 p {
   font-size: 1rem;
+  color: white;
 }
 
 strong {
@@ -56,4 +57,7 @@ body {
   background-color: yellow;
   padding-top: 1.5625em;
   margin-left: 1em;
+}
+.grid__main-content {
+  width: 60%;
 }/*# sourceMappingURL=style.css.map */
