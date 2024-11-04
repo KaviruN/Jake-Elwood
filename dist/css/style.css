@@ -80,6 +80,16 @@ body {
 .grid__main-content--yellow {
   color: var(--yellow);
 }
+.grid__main-content--btn {
+  background-color: var(--yellow);
+  color: hsl(0, 0%, 0%);
+  padding: 1em 2em;
+  border: none;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 900;
+  margin-top: 1em;
+}
 .grid__main-content p {
   font-size: 1.5rem;
   color: white;

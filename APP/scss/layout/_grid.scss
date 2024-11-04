@@ -18,7 +18,7 @@
     background-size: cover;
     background-repeat: no-repeat;
 
-    
+
     &-nav {
       display: flex;
       justify-content: space-between;
@@ -44,6 +44,17 @@
 
       &--yellow {
         color: var(--yellow);
+      }
+
+      &--btn {
+        background-color: var(--yellow);
+        color: hsl(0, 0%, 0%);
+        padding: 1em 2em;
+        border: none;
+        cursor: pointer;
+        font-size: u.rem(14);
+        font-weight: 900;
+        margin-top: 1em;
       }
 
       p {
