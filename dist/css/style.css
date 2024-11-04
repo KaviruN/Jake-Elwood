@@ -75,7 +75,6 @@ body {
   padding: 2em 3em;
   justify-self: center;
   min-height: 61vh;
-  width: 60%;
 }
 .grid__main-content--yellow {
   color: var(--yellow);
@@ -91,7 +90,6 @@ body {
   margin-top: 1em;
 }
 .grid__main-content p {
-  font-size: 1.5rem;
   color: white;
   margin-bottom: 1em;
 }/*# sourceMappingURL=style.css.map */
