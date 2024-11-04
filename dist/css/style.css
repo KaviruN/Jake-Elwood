@@ -65,7 +65,7 @@ body {
 .grid__main-nav--logo {
   background-color: var(--yellow);
   padding-top: 1.25em;
-  margin-left: 1em;
+  margin-left: 2em;
 }
 .grid__main-nav--menu {
   margin-right: 1em;
@@ -113,6 +113,13 @@ body {
   align-items: center;
   text-align: center;
   padding: 3em;
+}
+@media (min-width: 42.1875em) {
+  .grid__aside {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+  }
 }
 .grid__aside-wiget h2 {
   position: relative;
