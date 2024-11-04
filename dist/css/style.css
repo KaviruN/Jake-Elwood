@@ -43,13 +43,17 @@ body {
 }
 .grid__main {
   grid-area: main;
+  background-image: url("../../APP/img/hero-bg.jpg");
+  background-position: center;
 }
 .grid__main-nav {
   display: flex;
   justify-content: space-between;
-  background-color: black;
   font-size: 1.5rem;
+  align-items: center;
 }
 .grid__main-nav--logo {
   background-color: yellow;
+  padding-top: 1.5625em;
+  margin-left: 1em;
 }/*# sourceMappingURL=style.css.map */

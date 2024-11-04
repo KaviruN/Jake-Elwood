@@ -1,44 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/dist/css/style.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/dist/css/style.css" />
+  </head>
+  <body>
     <div class="grid">
+      <main class="grid__main">
+        <nav class="grid__main-nav">
+          <div class="grid__main-nav--logo">
+            <img src="./APP/img/logo.png" alt="" srcset="" />
+          </div>
+          <div class="grid__main-nav--menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="white"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              />
+            </svg>
+          </div>
+        </nav>
+        <div class="grid__main-content">
+          <p>
+            <strong
+              >The only marketing agency on
+              <span class="grid__main-content--yellow"
+                >a mission from God,</span
+              >
+              fully dedicated to increase your web traffic.
+            </strong>
+          </p>
+          <p>
+            We’re two brothers from Chicago that are trying to pay back our
+            debt. We can help you with SEO, SEM content marketing and whatever
+            else.
+          </p>
+          <button class="grid__main-content--btn">contact us</button>
+        </div>
+      </main>
 
-        <main class="grid__main">
-            <nav class="grid__main-nav">
-                <div class="grid__main-nav--logo">
-                    <img src="./APP/img/logo.png" alt="" srcset="">
-                </div>
-                <div class="grid__main-nav--menu">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
-                </div>
-            </nav>
-            <div class="grid__main-content">
-                <p><strong>The only marketing agency on <span class="grid__main-content--yellow">a mission from God,</span> fully dedicated to increase your web traffic. </strong></p>
-                <p>We’re two brothers from Chicago that are trying to pay back our debt. We can help you with SEO, SEM content marketing and whatever else.</p>
-                <button class="grid__main-content--btn">contact us</button>
-            </div>
-        </main>
+      <aside class="grid__aside">
+        <div class="grid_aside-wiget"></div>
+        <div class="grid_aside-wiget"></div>
+        <div class="grid_aside-wiget"></div>
+      </aside>
 
-        <aside class="grid__aside">
-            <div class="grid_aside-wiget"></div>
-            <div class="grid_aside-wiget"></div>
-            <div class="grid_aside-wiget"></div>
-        </aside>
-
-        <footer class="grid__footer">
-            <div class="grid__footer-social"></div>
-            <div class="grid__footer-content"></div>
-            <div class="grid__footer-legal"></div>
-        </footer>
+      <footer class="grid__footer">
+        <div class="grid__footer-social"></div>
+        <div class="grid__footer-content"></div>
+        <div class="grid__footer-legal"></div>
+      </footer>
     </div>
-</body>
+  </body>
 </html>

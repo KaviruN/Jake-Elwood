@@ -1,23 +1,32 @@
+@use '../global' as u;
+
 
 .grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-        "main"
-        "footer";
-    
-    &__main {
-        grid-area: main;
-        &-nav {
-            display: flex;
-            justify-content: space-between;
-            background-color: black;
-            font-size: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "main"
+    "footer";
 
-            &--logo {
-                background-color: yellow;
-            }
-        }
+  &__main {
+    grid-area: main;
+    background-image: url('../../APP/img/hero-bg.jpg');
+    background-position: center;    
+    &-nav {
+      display: flex;
+      justify-content: space-between;
+    //   background-color: black;
+      font-size: 1.5rem;
+      align-items: center;
+      
+
+      &--logo {
+        background-color: yellow;
+        padding-top: u.em(25);
+        margin-left: 1em;
+      }
     }
+  }
+
 }
