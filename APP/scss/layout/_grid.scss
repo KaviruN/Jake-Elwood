@@ -34,6 +34,16 @@
         justify-self: center;
         min-height: 61vh;
         width: 60%;
+
+        &--yellow{
+            color: var(--yellow);
+        }
+
+        p {
+            font-size: u.rem(24);
+            color: white;
+            margin-bottom: 1em;
+        }
         
         
       }
