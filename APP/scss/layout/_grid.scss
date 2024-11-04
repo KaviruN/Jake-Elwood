@@ -68,7 +68,17 @@
 
   &__aside {
     p {
-      color: rgb(0, 0, 0);
+      color: var(--gray);
+      font-weight: 500;
     }
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3em;
+
+    
   }
 }
