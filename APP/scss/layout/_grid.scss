@@ -82,7 +82,7 @@
         margin-bottom: 1em;
 
         &::after {
-          content: '';
+          content: "";
           position: absolute;
           left: 20%; // Center the underline (50% width means 25% from each side)
           bottom: -0.2em; // Adjust the position below the text
@@ -100,7 +100,7 @@
     }
   }
 
-  &__footer{
+  &__footer {
     grid-area: footer;
     background-color: hsl(0, 0%, 92%);
     display: flex;
@@ -123,10 +123,9 @@
         margin: 1em;
       }
 
-      p{
+      p {
         font-weight: 500;
       }
-    
     }
 
     &-legal {
