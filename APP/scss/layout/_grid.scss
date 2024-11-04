@@ -3,7 +3,7 @@
 .grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr auto;
   grid-template-areas:
     "main"
     "aside"
@@ -21,7 +21,7 @@
     &-nav {
       display: flex;
       justify-content: space-between;
-      font-size: 1.5rem;
+      // font-size: 1.5rem;
       align-items: center;
 
       &--logo {
@@ -97,6 +97,42 @@
         font-weight: 500;
         margin-bottom: 1em;
       }
+    }
+  }
+
+  &__footer{
+    grid-area: footer;
+    background-color: hsl(0, 0%, 92%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    text-align: center;
+
+    &-social {
+      i {
+        font-size: 1.5em;
+        margin: 0 0.5em;
+      }
+    }
+
+    &-content {
+      opacity: 0.37;
+
+      img {
+        margin: 1em;
+      }
+
+      p{
+        font-weight: 500;
+      }
+    
+    }
+
+    &-legal {
+      opacity: 0.37;
+      margin-top: 2em;
+      font-weight: 500;
     }
   }
 }

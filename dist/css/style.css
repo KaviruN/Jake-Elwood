@@ -11,7 +11,7 @@ h2 {
 }
 
 p {
-  font-size: 1rem;
+  font-size: clamp(1rem, 0.875rem + 1vw, 1.125rem);
   color: white;
 }
 
@@ -45,7 +45,7 @@ body {
 .grid {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr auto;
   grid-template-areas: "main" "aside" "footer";
 }
 .grid__main {
@@ -60,7 +60,6 @@ body {
 .grid__main-nav {
   display: flex;
   justify-content: space-between;
-  font-size: 1.5rem;
   align-items: center;
 }
 .grid__main-nav--logo {
@@ -123,4 +122,31 @@ body {
   color: var(--gray);
   font-weight: 500;
   margin-bottom: 1em;
+}
+.grid__footer {
+  grid-area: footer;
+  background-color: hsl(0, 0%, 92%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+  text-align: center;
+}
+.grid__footer-social i {
+  font-size: 1.5em;
+  margin: 0 0.5em;
+}
+.grid__footer-content {
+  opacity: 0.37;
+}
+.grid__footer-content img {
+  margin: 1em;
+}
+.grid__footer-content p {
+  font-weight: 500;
+}
+.grid__footer-legal {
+  opacity: 0.37;
+  margin-top: 2em;
+  font-weight: 500;
 }/*# sourceMappingURL=style.css.map */

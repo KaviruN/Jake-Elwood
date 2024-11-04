@@ -10,7 +10,7 @@ h2 {
 }
 
 p {
-    font-size: u.rem(16);
+    font-size: clamp(u.rem(16), u.rem(14) + 1vw, u.rem(18));
     color: white;
 }
 
