@@ -105,6 +105,11 @@ body {
     min-height: 61vh;
   }
 }
+@media (min-width: 56.25em) {
+  .grid__main-content {
+    width: 40%;
+  }
+}
 .grid__aside {
   grid-area: aside;
   display: flex;

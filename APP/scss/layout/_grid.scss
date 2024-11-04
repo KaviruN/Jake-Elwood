@@ -71,6 +71,10 @@
         width: 60%;
         min-height: 61vh;
       }
+      @media (min-width: u.em(900)) {
+        width: 40%;
+
+      }
 
       // button {
       //   align-self: flex-start;
