@@ -18,7 +18,7 @@
 
 
 @function precentage($size) {
-  @if math.is-unitless($pixel) {
+  @if math.is-unitless($size) {
     @return math.div($size, 960) * 100 + '%';
   } @else {
     @error 'Don\'t use units when using the em() function; only numbers.';

@@ -36,6 +36,11 @@ body {
   font-family: var(--font);
 }
 
+:root {
+  --yellow: hsl(54, 100%, 50%);
+  --gray: hsl(0, 0%, 25%);
+}
+
 .grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -43,9 +48,12 @@ body {
   grid-template-areas: "main" "footer";
 }
 .grid__main {
+  display: flex;
+  flex-direction: column;
   grid-area: main;
   background-image: url("../../APP/img/hero-bg.jpg");
   background-position: center;
+  min-height: 61vh;
 }
 .grid__main-nav {
   display: flex;
@@ -54,10 +62,13 @@ body {
   align-items: center;
 }
 .grid__main-nav--logo {
-  background-color: yellow;
+  background-color: var(--yellow);
   padding-top: 1.5625em;
   margin-left: 1em;
 }
 .grid__main-content {
+  padding: 2em 3em;
+  justify-self: center;
+  min-height: 61vh;
   width: 60%;
 }/*# sourceMappingURL=style.css.map */
