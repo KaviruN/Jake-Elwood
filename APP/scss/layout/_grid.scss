@@ -59,10 +59,23 @@
         background-color: var(--light-yellow);
       }
 
-      p {
+      h2 {
         color: white;
         margin-bottom: 1em;
       }
+    }
+    @media (min-width: u.em(675)) {
+      &-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; // Center items vertically
+        align-items: flex-start; // Center items horizontally
+        width: 60%;
+        min-height: 61vh;
+      }
+      // button {
+      //   align-self: flex-start;
+      // }
     }
   }
 

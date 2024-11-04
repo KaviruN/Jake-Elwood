@@ -7,7 +7,7 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(1.125rem, 1rem + 2vw, 1.25rem);
+  font-size: clamp(1.125rem, 1rem + 2vw, 1.5rem);
 }
 
 p {
@@ -91,9 +91,19 @@ body {
 .grid__main-content--btn:hover, .grid__main-content--btn:focus {
   background-color: var(--light-yellow);
 }
-.grid__main-content p {
+.grid__main-content h2 {
   color: white;
   margin-bottom: 1em;
+}
+@media (min-width: 42.1875em) {
+  .grid__main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 60%;
+    min-height: 61vh;
+  }
 }
 .grid__aside {
   grid-area: aside;
