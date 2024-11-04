@@ -67,18 +67,36 @@
   }
 
   &__aside {
-    p {
-      color: var(--gray);
-      font-weight: 500;
-    }
     grid-area: aside;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
     padding: 3em;
 
-    
+    &-wiget {
+      h2 {
+        position: relative; // Required for positioning the pseudo-element
+        display: inline-block; // Ensure the h2 element is inline-block
+        margin-bottom: 1em;
+
+        &::after {
+          content: '';
+          position: absolute;
+          left: 20%; // Center the underline (50% width means 25% from each side)
+          bottom: -0.2em; // Adjust the position below the text
+          width: 50%; // Set the width of the underline to 50% of the text width
+          height: u.em(2); // Set the thickness of the underline
+          background-color: var(--yellow); // Set the color of the underline
+        }
+      }
+
+      p {
+        color: var(--gray);
+        font-weight: 500;
+        margin-bottom: 1em;
+      }
+    }
   }
 }

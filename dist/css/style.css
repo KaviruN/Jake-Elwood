@@ -100,12 +100,27 @@ body {
   grid-area: aside;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
   padding: 3em;
 }
-.grid__aside p {
+.grid__aside-wiget h2 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1em;
+}
+.grid__aside-wiget h2::after {
+  content: "";
+  position: absolute;
+  left: 20%;
+  bottom: -0.2em;
+  width: 50%;
+  height: 0.125em;
+  background-color: var(--yellow);
+}
+.grid__aside-wiget p {
   color: var(--gray);
   font-weight: 500;
+  margin-bottom: 1em;
 }/*# sourceMappingURL=style.css.map */
